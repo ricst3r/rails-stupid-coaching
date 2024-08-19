@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Answer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <h1>Stupid Coaching</h1>
+    <ul>
+      <li><%= @question %><p>- You</p></li>
+      <li><%= @answer %><p>- Coach</p></li>
+    </ul>
+
+    <%= link_to "Ask a new questions", ask_path %>
+  </body>
+</html>
